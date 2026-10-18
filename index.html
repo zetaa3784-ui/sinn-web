@@ -47,7 +47,7 @@ label{font-weight:600;font-size:.95rem}input,select,textarea{width:100%;padding:
 <p>بنعمل لعيادة الأسنان موقع صفحة واحدة سريع على الموبايل: خدماتك، مواعيدك، خريطة الوصول، وزرار حجز على واتساب. <b>جاهز في 72 ساعة</b>، و<b>بتشوف نموذج لعيادتك مجانًا قبل ما تدفع أي حاجة.</b></p>
 <a class="btn" href="#demo-form">عايز نموذج لعيادتي</a>
 <a class="btn o" href="demo/" target="_blank">شوف مثال حي</a>
-<div class="badges"><span>✔ حجز واتساب بضغطة</span><span>✔ مناسب للموبايل</span><span>✔ ربط بخرايط جوجل</span><span>✔ عربي + إنجليزي اختياري</span></div>
+<div class="badges"><span>✔ زرار حجز واتساب لعيادتك</span><span>✔ مناسب للموبايل</span><span>✔ ربط بخرايط جوجل</span><span>✔ عربي + إنجليزي اختياري</span></div>
 </div>
 <div class="phone"><iframe src="demo/" title="مثال موقع عيادة" loading="lazy"></iframe></div>
 </div></div>
@@ -88,17 +88,17 @@ label{font-weight:600;font-size:.95rem}input,select,textarea{width:100%;padding:
 <form id="f" onsubmit="return send(event)">
 <div><label>اسم الدكتور / العيادة *</label><input id="n" required placeholder="مثال: عيادة د. أحمد لطب الأسنان"></div>
 <div><label>المنطقة *</label><input id="a" required placeholder="مدينة نصر، المعادي، التجمع…"></div>
-<div><label>رقم موبايل للتواصل *</label><input id="p" required inputmode="tel" pattern="[0-9+ ]{10,15}" placeholder="01xxxxxxxxx"></div>
+<div><label>رقم موبايل العيادة أو إيميل للتواصل *</label><input id="p" required placeholder="01xxxxxxxxx أو name@example.com"></div>
 <div><label>لينك صفحة العيادة (فيسبوك / إنستجرام / جوجل)</label><input id="l" placeholder="https://..."></div>
 <div><label>الباقة المبدئية</label><select id="k"><option>لسه مش متأكد</option><option>صفحة العيادة 1,500</option><option>موقع العيادة + دومين 2,500</option></select></div>
-<button class="btn wa" type="submit">ابعت الطلب على واتساب</button>
-<p class="small">الطلب بيتفتح في واتساب برسالة جاهزة، إنت اللي بتضغط إرسال. مش بنسجل بياناتك في أي مكان تاني. تفضّل الإيميل؟ <a id="ml" href="mailto:ai.pulse@mail.grokbot.com?subject=%D8%B7%D9%84%D8%A8%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D9%88%D9%82%D8%B9%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9">ابعت إيميل</a>.</p>
+<button class="btn" type="submit">ابعت الطلب بالإيميل</button>
+<p class="small">الطلب بيتفتح في برنامج الإيميل عندك برسالة جاهزة لـ ai.pulse@mail.grokbot.com، وإنت اللي بتضغط إرسال. مش بنسجل بياناتك في أي مكان. أو ابعتلنا مباشرة على <a href="mailto:ai.pulse@mail.grokbot.com">ai.pulse@mail.grokbot.com</a>.</p>
 </form></div></section>
 
 <section><div class="w">
 <h2>أسئلة بتتسأل كتير</h2>
 <details><summary>هل النموذج المجاني ليه أي شرط؟</summary><p>لا. بنعمله من البيانات المنشورة عن عيادتك. لو مش عاجبك خلاص، ومش بننشره على أي حال من غير موافقتك.</p></details>
-<details><summary>هدفع إزاي؟</summary><p>إنستاباي أو فودافون كاش: 50% بعد موافقتك على النموذج، و50% بعد التسليم. بتاخد إيصال بكل دفعة.</p></details>
+<details><summary>هدفع إزاي؟</summary><p>50% بعد موافقتك على النموذج و50% بعد التسليم. تفاصيل الدفع بنبعتها لك بعد ما توافق على النموذج، وبتاخد إيصال بكل دفعة.</p></details>
 <details><summary>محتاج أدفع استضافة؟</summary><p>في باقة "صفحة العيادة" الاستضافة مجانية على رابط فرعي. لو عايز دومين باسمك بتدفع تكلفته الفعلية لشركة الدومين مباشرة وبيتسجل باسمك.</p></details>
 <details><summary>ينفع أعدل بعد التسليم؟</summary><p>فيه تعديلين مجانًا. بعد كده التعديلات البسيطة ضمن الرعاية الشهرية، أو بسعر متفق عليه قبلها.</p></details>
 <details><summary>هل ده بديل لفيزيتا أو مواقع الحجز؟</summary><p>لا، ده مكمّل. ده موقعك إنت باسمك، ومن غير عمولة على الحجوزات، وتقدر تحط فيه لينك صفحتك على أي منصة حجز.</p></details>
@@ -116,13 +116,12 @@ label{font-weight:600;font-size:.95rem}input,select,textarea{width:100%;padding:
 <li>مش بنشارك بيانات عيادتك أو مرضاك مع أي طرف.</li>
 </ul></div></section>
 
-<footer><div class="w">© 2026 سِنّ ويب: مواقع لعيادات الأسنان في القاهرة والجيزة · واتساب: <a href="https://wa.me/201028869577">01028869577</a> · <a href="mailto:ai.pulse@mail.grokbot.com">ai.pulse@mail.grokbot.com</a></div></footer>
-<a class="fab" id="fab" href="https://wa.me/201028869577?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%20%D9%84%D9%85%D9%88%D9%82%D8%B9%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%AA%D9%8A" target="_blank" rel="noopener">💬 واتساب</a>
+<footer><div class="w">© 2026 سِنّ ويب: مواقع لعيادات الأسنان في القاهرة والجيزة · تواصل: <a href="mailto:ai.pulse@mail.grokbot.com">ai.pulse@mail.grokbot.com</a></div></footer>
+<a class="fab" id="fab" href="mailto:ai.pulse@mail.grokbot.com?subject=%D8%B7%D9%84%D8%A8%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A">✉️ راسلنا</a>
 <script>
-const WA="201028869577";
+const TO="ai.pulse@mail.grokbot.com";
 function msg(){const g=id=>document.getElementById(id).value.trim();
 return "أهلاً، عايز نموذج مجاني لموقع عيادتي\nالعيادة: "+g('n')+"\nالمنطقة: "+g('a')+"\nالموبايل: "+g('p')+"\nاللينك: "+(g('l')||"-")+"\nالباقة: "+g('k');}
-function send(e){e.preventDefault();const u="https://wa.me/"+WA+"?text="+encodeURIComponent(msg());window.open(u,"_blank");return false;}
-document.getElementById('ml').addEventListener('click',function(){this.href="mailto:ai.pulse@mail.grokbot.com?subject="+encodeURIComponent("طلب نموذج موقع عيادة")+"&body="+encodeURIComponent(msg());});
+function send(e){e.preventDefault();location.href="mailto:"+TO+"?subject="+encodeURIComponent("طلب نموذج موقع عيادة: "+document.getElementById('n').value.trim())+"&body="+encodeURIComponent(msg());return false;}
 </script>
 </body></html>
